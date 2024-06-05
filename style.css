@@ -1,0 +1,365 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item.active {
+    display: block;
+}
+header
+{
+    background-color: wheat;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .shop-button {
+        flex: 1 1 100%;
+    }
+}
+#productcard:hover
+{
+    background-color: bisque;
+}
+#logo
+{
+  mix-blend-mode: color-burn;
+}
+/*  */
+.carousel-item1 {
+    min-width: 400px;
+    margin:auto;
+    align-items: center;
+}
+
+.carousel-container1 {
+    overflow: hidden;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/*  */
+.main_back {
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    width: 11em;
+    height: 11em;
+    background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+    z-index: -2;
+    box-shadow: inset 0px 0px 180px 5px #ffffff;
+  }
+  
+  .main1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 14em;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+  }
+  
+  .card1 {
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    background: lightgrey;
+    transition: .4s ease-in-out, .2s background-color ease-in-out, .2s background-image ease-in-out;
+    background: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(5px);
+    border: 1px solid transparent;
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card1 .instagram {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #cc39a4;
+  }
+  
+  .card1:nth-child(2) {
+    border-radius: 0px;
+  }
+  
+  .card1:nth-child(2) .twitter {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #03A9F4;
+  }
+  
+  .card1:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card1:nth-child(3) .dribble {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #ffb5d2;
+  }
+  
+  .card1:nth-child(4) {
+    border-radius: 0px;
+  }
+  
+  .card1:nth-child(4) .codepen {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: black;
+  }
+  
+  .card1:nth-child(5) {
+    border-radius: 0px;
+  }
+  
+  .card1:nth-child(5) .uiverse {
+    position: absolute;
+    margin-left: 0.2em;
+    margin-top: 0.2em;
+    opacity: 0;
+    transition: .2s ease-in-out;
+  }
+  
+  .card1:nth-child(6) {
+    border-radius: 0px;
+  }
+  
+  .card1:nth-child(6) .discord {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #8c9eff;
+  }
+  
+  .card1:nth-child(7) {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card1:nth-child(7) .github {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: black;
+  }
+  
+  .card1:nth-child(8) {
+    border-radius: 0px;
+  }
+  
+  .card1:nth-child(8) .telegram {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #29b6f6;
+  }
+  
+  .card1:nth-child(9) {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .card1:nth-child(9) .reddit {
+    opacity: 0;
+    transition: .2s ease-in-out;
+  }
+  
+  .main1:hover {
+    width: 14em;
+    cursor: pointer;
+  }
+  
+  .main1:hover .main_back {
+    opacity: 0;
+  }
+  
+  .main1:hover .card1 {
+    margin: .2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .main1:hover .card1:nth-child(5) {
+    border: transparent;
+  }
+  
+  .main1:hover .text {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .main1:hover .instagram {
+    opacity: 1;
+  }
+  
+  .main1:hover .twitter {
+    opacity: 1;
+  }
+  
+  .main1:hover .dribble {
+    opacity: 1;
+  }
+  
+  .main1:hover .codepen {
+    opacity: 1;
+  }
+  
+  .main1:hover .uiverse {
+    opacity: 1;
+  }
+  
+  .main1:hover .discord {
+    opacity: 1;
+  }
+  
+  .main1:hover .github {
+    opacity: 1;
+  }
+  
+  .main1:hover .telegram {
+    opacity: 1;
+  }
+  
+  .main1:hover .reddit {
+    opacity: 1;
+  }
+  
+  .card1:nth-child(1):hover {
+    background-color: #cc39a4;
+  }
+  
+  .card1:nth-child(1):hover .instagram {
+    fill: white;
+  }
+  
+  .card1:nth-child(2):hover {
+    background-color: #03A9F4;
+  }
+  
+  .card1:nth-child(2):hover .twitter {
+    fill: white;
+  }
+  
+  .card1:nth-child(3):hover {
+    background-color: #ffb5d2;
+  }
+  
+  .card1:nth-child(3):hover .dribble {
+    fill: white;
+  }
+  
+  .card1:nth-child(4):hover {
+    background-color: #1E1F26;
+  }
+  
+  .card1:nth-child(4):hover .codepen {
+    fill: white;
+  }
+  
+  .card1:nth-child(5):hover {
+    animation: backgroundIMG .1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .card1:nth-child(5):hover .uiverse #paint0_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  .card1:nth-child(5):hover .uiverse #paint1_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  .card1:nth-child(5):hover .uiverse #paint2_linear_501_142 stop {
+    stop-color: white;
+  }
+  
+  @keyframes backgroundIMG {
+    100% {
+      background-image: linear-gradient(#BF66FF,#6248FF,#00DDEB);
+    }
+  }
+  
+  .card1:nth-child(6):hover {
+    background-color: #8c9eff;
+  }
+  
+  .card1:nth-child(6):hover .discord {
+    fill: white;
+  }
+  
+  .card1:nth-child(7):hover {
+    background-color: black;
+  }
+  
+  .card1:nth-child(7):hover .github {
+    fill: white;
+  }
+  
+  .card1:nth-child(8):hover {
+    background-color: #29b6f6;
+  }
+  
+  .card1:nth-child(8):hover .telegram > path:nth-of-type(1) {
+    fill: white;
+  }
+  
+  .card1:nth-child(8):hover .telegram > path:nth-of-type(2) {
+    fill: #29b6f6;
+  }
+  
+  .card1:nth-child(8):hover .telegram > path:nth-of-type(3) {
+    fill: #29b6f6;
+  }
+  
+  .card1:nth-child(9):hover {
+    background-color: rgb(255,69,0);
+  }
+  
+  .card1:nth-child(9) .reddit > g circle {
+    fill: rgb(255,69,0);
+  }
+  
+  .card1:nth-child(9) .reddit > g path {
+    fill: white;
+  }
+  
+  .text {
+    position: absolute;
+    font-size: 0.7em;
+    transition: .4s ease-in-out;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.33em;
+    z-index: 3;
+  }
